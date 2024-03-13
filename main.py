@@ -16,7 +16,7 @@ except subprocess.CalledProcessError as e:
     print(f"Помилка | Сталася помилка під час встановлення залежностей: {e}")
     sys.exit(1)
 
-moderation_only = 1215061455133614122  # id канала для модерации
+moderation_only =  # id канала для модерации
 
 with open('salary.json', 'r') as jf:
     salary_dict = json.load(jf)
@@ -27,7 +27,7 @@ with open('users_info.json', 'r') as jf:
 with open('bot_token.txt', 'r') as jf:
     TOKEN = jf.read()
 bot = commands.Bot(command_prefix='!', help_command=None, intents=disnake.Intents.all(),
-                   test_guilds=[1183409537450004621])
+                   test_guilds=[])# id вашего сервера
 
 
 def today_sum(user):
